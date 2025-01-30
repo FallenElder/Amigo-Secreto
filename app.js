@@ -23,3 +23,10 @@ function listaAmigos(){
         newLi.appendChild(document.createTextNode(amigos[i]));
     }
 } 
+
+function sortearAmigo(){
+    if (amigos.length !== 0){
+        var i = Math.floor(Math.random() * (amigos.length - 1 + 1)) + 1;
+        document.getElementById('resultado').innerHTML = `O amigo secreto sorteado é: ${amigos[i - 1]}`
+    }
+}
